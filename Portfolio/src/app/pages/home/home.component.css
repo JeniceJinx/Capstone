@@ -1,0 +1,19 @@
+.banner{
+    background-image: url('https://as1.ftcdn.net/jpg/05/26/02/81/240_F_526028156_2Bu8fE9ewjn7ERY3rpLtuqz52Ppe6sSb.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -2%;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+
+}
+
+.banner h1{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    top: 30%;
+    left: 20%;
+    position: absolute;
+}
