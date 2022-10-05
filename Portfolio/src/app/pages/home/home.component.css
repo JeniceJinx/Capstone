@@ -68,3 +68,11 @@
     font-size: 25px;
     margin-top: 10px;
  }
+
+ .view-more-btn{
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    padding: 10px 10px;
+  
+ }
