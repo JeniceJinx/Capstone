@@ -6,7 +6,7 @@
     </div>
 </div>
 <div class="container mt-5 mb-4">
-    <h1 class="text-center">Lorem Ipsum</h1>
+    <h1 class="text-center">Top Technology</h1>
     <div class="row">
         <div class="col-lg-4"> 
         <div class="stepBox">
@@ -27,4 +27,15 @@
         </div>
     </div>
     </div>
+</div>
+<!-- projectBox -->
+<div class="container mt-4 mb-4">
+    <h1 class="text-center">Most Recent Projects</h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor="let pd of projectData">
+            <div class="projectbox">
+                <img src="{{pd.projectImage}}" alt="technical writing"/>
+                <h1>{{ pd.projectTitle}}</h1>
+            </div>
+        </div>
 </div>
