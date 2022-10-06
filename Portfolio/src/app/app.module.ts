@@ -10,6 +10,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { NavComponent } from './sharepage/nav/nav.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatCommonModule } from '@angular/material/core';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatCardModule,
+    MatCommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
