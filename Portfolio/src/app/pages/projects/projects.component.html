@@ -6,7 +6,8 @@
                 <h1>{{pd.projectName}}</h1>
                 <p>{{pd.projectTech}}</p>
                 <p>{{pd.basicConcept}}</p>
-                <a class="seebtn">View Code</a>
+                <br/>
+                <a class="seebtn"  [routerLink]= "['/projects', pd.id]">View Code &nbsp;<i class="bi bi-file-code-fill"></i></a>
             </div>
         </div>
     </div>

@@ -9,11 +9,12 @@ import { AboutComponent } from './pages/about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { NavComponent } from './sharepage/nav/nav.component';
-import { ContactsComponent } from './pages/contacts/contacts.component';
+import { ContactFormComponent } from './pages/contacts/contacts.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatCommonModule } from '@angular/material/core';
 import {MatCardModule} from '@angular/material/card';
+import { IndprojComponent } from './pages/indproj/indproj.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {MatCardModule} from '@angular/material/card';
     HomeComponent,
     ProjectsComponent,
     AboutComponent,
-    ContactsComponent,
+    ContactFormComponent,
+    IndprojComponent,
   ],
   imports: [
     BrowserModule,
