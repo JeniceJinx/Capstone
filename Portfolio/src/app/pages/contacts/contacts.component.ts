@@ -4,33 +4,36 @@ import { ContactService } from './contact.service';
 
 
 
+
 @Component({
   selector: 'app-contact-form',
   templateUrl: './contacts.component.html',
   styleUrls: ['./contacts.component.css']
 })
 export class ContactFormComponent implements OnInit {
-  FormData!: FormGroup;
-  constructor(private builder: FormBuilder, private contact: ContactService) { }
-
+  title = 'Portfolio';
+  submitted = false;
+  emailForm!: FormGroup;
+ 
+  constructor(private formBuilder: FormBuilder) {}
+ 
   ngOnInit() {
-    this.FormData = this.builder.group({
-      Fullname: new FormControl('', [Validators.required]),
-      Email: new FormControl(['', [Validators.required, Validators.pattern('^[A-Za-z0-9._%+-]+@[A-Za-z0-9._%+-]{2,}[.][A-Za-z]{2,}$')]]),
-      Comment: new FormControl('', [Validators.required])
+    this.emailForm = this.formBuilder.group({
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.minLength(6)]],
     });
   }
-
-
-  onSubmit(FormData: any) {
-    console.log(FormData)
-    this.contact.PostMessage(FormData)
-      .subscribe(response => {
-        location.href = 'https://mailthis.to/confirm'
-        console.log(response)
-      }, error => {
-        console.warn(error.responseText)
-        console.log({ error })
-      })
+ 
+  onSubmit() {
+    this.submitted = true;
+ 
+    // stop the process here if form is invalid
+    if (this.emailForm.invalid) {
+      return;
+    }
+ 
+    alert('SUCCESS!!');
   }
 }

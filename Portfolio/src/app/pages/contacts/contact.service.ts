@@ -7,6 +7,12 @@ import { map } from 'rxjs';
   providedIn: 'root'
 })
 export class ContactService {
+  clearEmail(): void {
+    throw new Error('Method not implemented.');
+  }
+  getItems() {
+    throw new Error('Method not implemented.');
+  }
   api!: string;
 
   constructor(private http: HttpClient) { }

@@ -15,6 +15,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatCommonModule } from '@angular/material/core';
 import {MatCardModule} from '@angular/material/card';
 import { IndprojComponent } from './pages/indproj/indproj.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,10 @@ import { IndprojComponent } from './pages/indproj/indproj.component';
     BrowserAnimationsModule,
     MatSliderModule,
     MatCardModule,
-    MatCommonModule
+    MatCommonModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
