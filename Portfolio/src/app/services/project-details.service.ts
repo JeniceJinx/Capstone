@@ -12,7 +12,7 @@ export class ProjectDetailsService {
   projectDetails = [
     {
       id: 1,
-      projectTitle: "Java Code ",
+      projectTitle: "Gladiator",
       projectTech: "Java ",
       basicConcept: "basic java application ",
       projectImage: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGphdmF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
@@ -28,18 +28,18 @@ export class ProjectDetailsService {
       },
       {
       id: 3,
-      projectTitle: "SQL DB ",
+      projectTitle: "Fantasy Football",
       projectTech: "SQL",
       basicConcept: "basic  SQL ",
-      projectImage: "https://images.unsplash.com/photo-1633412802994-5c058f151b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3FsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      projectImage: "https://as1.ftcdn.net/jpg/01/73/73/65/240_F_173736505_73z0LgF11ckxmHxhuwnRBOaAiD205Fz3.jpg",
       projectUrl:   "https://github.com/JeniceJinx/NFL-Queries/blob/main/Sql"
       },
       {
       id: 4,  
-      projectTitle: "Python Code ",
-      projectTech: "python ",
+      projectTitle: "Fortune Teller ",
+      projectTech: "Python ",
       basicConcept: "basic python application ",
-      projectImage: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHl0aG9uJTIwcHJvZ3JhbW1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      projectImage: "https://as1.ftcdn.net/jpg/03/67/68/18/240_F_367681808_K6N6h4y5hIHL1mq6dwlUaa33a2yLh2Es.jpg",
       projectUrl:   "https://github.com/JeniceJinx/PythonPractice/blob/main/Fortune%20Cookie.py"
       },
       {
@@ -58,6 +58,14 @@ export class ProjectDetailsService {
       projectImage: "https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGphdmF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       projectUrl:   ""
       },
+      {
+        id: 7,
+        projectTitle: "Contoso University",
+        projectTech: "C# ASP.Net ",
+        basicConcept: "Fictitional Unviserity Website with Registration and Student DB ",
+        projectImage: "https://as1.ftcdn.net/jpg/02/86/20/92/240_F_286209293_ql7Gq3b1O5sQUG9jHM1xCBAyxeKF038g.jpg",
+        projectUrl:   "https://github.com/JeniceJinx/ContosoUniversity"
+        },
       
   ]
 }
