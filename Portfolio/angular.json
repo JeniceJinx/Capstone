@@ -96,6 +96,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "Portfolio:build:production",
+            "firebaseProject": "capstone-a6ed2",
+            "firebaseHostingSite": "capstone-a6ed2"
+          }
         }
       }
     }

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "capstone-a6ed2": {
+      "hosting": {
+        "Portfolio": [
+          "capstone-a6ed2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "capstone-a6ed2"
+  }
+}

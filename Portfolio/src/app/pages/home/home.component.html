@@ -1,5 +1,9 @@
 <div class="banner">
-    <h1>""</h1>
+    <h1 class="quote">"Whether you think you can, or can't -- you're right"<br/>
+        <br/>
+        -Henry Ford
+    </h1>
+    
     <div class="content">
      
     <a routerLink="projects"> Projects <i class="bi bi-arrow-right"></i> </a>
@@ -35,7 +39,8 @@
         <div class="col-lg-3 mt-3" *ngFor="let pd of projectData; index as i">
             <div class="projectbox" *ngIf="i < 4">
                 <img src="{{pd.projectImage}}" alt="technical writing"/>
-                <h1>{{ pd.projectTitle}}</h1>
+                <h1 [routerLink]= "['/projects', pd.id]">{{ pd.projectTitle}}</h1>
+                
             </div>
         </div>
         <a routerLink="projects" class="view-more-btn"> More Projects </a>

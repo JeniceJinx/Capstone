@@ -1,4 +1,4 @@
-h1{
+.background{
     background-image: url('https://v.ftcdn.net/04/26/22/55/240_F_426225552_M16woiDZrkr8VOZHo7mXbTLEFbzj5efH_ST.mp4');
     height: 100vh;
     width: 100vw;
@@ -6,7 +6,16 @@ h1{
     background-size: cover;
 }
 
-mat-card{
-    background-color: rgba(95, 86, 179, 0.186);
-    
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 20px;
+    padding-top: 13%;
+  }
+  
+.mat-card{
+    max-width: 400px;
+    box-shadow: 10px 10px;
 }
+  

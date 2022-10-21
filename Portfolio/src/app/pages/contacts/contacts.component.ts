@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators, NgForm } from '@angular/forms'
-import { ContactService } from './contact.service';
+
 
 
 
@@ -10,7 +10,7 @@ import { ContactService } from './contact.service';
   templateUrl: './contacts.component.html',
   styleUrls: ['./contacts.component.css']
 })
-export class ContactFormComponent implements OnInit {
+export class ContactComponent implements OnInit {
   title = 'Portfolio';
   submitted = false;
   emailForm!: FormGroup;
